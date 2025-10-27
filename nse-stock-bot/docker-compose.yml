@@ -3,7 +3,7 @@ services:
   backend:
     build: ./backend
     ports:
-      - "5000:5000"
+      - "5001:5000"  # Changed from 5000:5000 to 5001:5000
     environment:
       - EMAIL_PASSWORD=your_app_password
       - SENDER_EMAIL=your_email@gmail.com
@@ -13,7 +13,7 @@ services:
   frontend:
     image: nginx:alpine
     ports:
-      - "8080:8080"
+      - "8081:80"  # Changed from 80:80 to 8081:80
     volumes:
       - ./frontend:/usr/share/nginx/html
     depends_on:

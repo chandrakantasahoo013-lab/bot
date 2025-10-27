@@ -1,0 +1,9 @@
+yfinance>=0.2.40
+pandas
+numpy
+scikit-learn
+matplotlib
+pandas_ta
+schedule
+flask
+websockets>=10.0
